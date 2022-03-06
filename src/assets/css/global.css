@@ -1,0 +1,14 @@
+body {
+    background-image: url('../img/backgroundimg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/*div {*/
+/*    opacity: 100%;*/
+
+/*}*/
+a{
+  text-decoration: none;
+}
