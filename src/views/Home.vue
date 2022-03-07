@@ -2,14 +2,15 @@
     <div style="height: 100%">
         <el-container>
             <NavMenu v-on:change="change"></NavMenu>
-            <el-aside width="25%">
+
+                <el-aside width="25%">
                 <author></author>
                 <category v-on:filter_tag="filter_tag" v-on:goto_detail="detail">
                 </category>
             </el-aside>
-            <el-container>
+            <el-container >
 
-                <el-main style="opacity: 90%; ">
+                <el-main style="opacity: 90%; margin-top: 15px">
 
                     <blog v-if="active==1" v-on:goto_detail="detail" :tag_id="tag_id"></blog>
                     <about_me v-else-if="active==2"></about_me>
@@ -23,6 +24,8 @@
                     <Footer/>
                 </el-footer>
             </el-container>
+
+
 
         </el-container>
 

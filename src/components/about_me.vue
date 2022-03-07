@@ -53,7 +53,9 @@
 </template>
 
 <script>
+    import settings from "../assets/js/settings";
     export default {
+
         name: "about_me",
         data(){
             return{
@@ -66,7 +68,7 @@
         },
         methods:{
            get_author_info(){
-                this.$axios.get('http://127.0.0.1:8000/user/author/').then(response=>{
+                this.$axios.get(settings.base_url+'/user/author/').then(response=>{
                     // console.log(response)
                     this.author_info = response.data[0];
 
